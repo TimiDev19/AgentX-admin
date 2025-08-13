@@ -97,7 +97,7 @@ export default function Home() {
 
   if (isAuthenticated) {
     return (
-      <div className='pl-[20vw] pr-[3vw] h-[100vh] w-[100vw] scrollbar-hide overflow-y-auto bg-[#EDEDED] dark:bg-[#121212] py-[10px] text-black'>
+      <div className='pl-[20vw] pr-[3vw] h-[100vh] w-[100vw] scrollbar-hide overflow-y-scroll bg-[#EDEDED] dark:bg-[#121212] py-[10px] text-black'>
         <div className=" w-full h-[35px] flex items-center justify-between mb-[20px]">
           <div className=" bg-white dark:bg-[#000000] dark:text-white rounded-xl text-sm font-semibold max-h-[35px] p-2">
             23/06/2023 - 12:23 AM
