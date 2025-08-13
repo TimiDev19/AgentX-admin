@@ -45,7 +45,7 @@ const page = () => {
                     <SendRoundedIcon className=' cursor-pointer'/>
                 </div>
             </div>
-            <Navbar />
+
         </div>
     )
 }

@@ -44,7 +44,7 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <Navbar />
+
         </div>
     )
 }
