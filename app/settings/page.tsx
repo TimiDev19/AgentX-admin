@@ -10,7 +10,7 @@ import ellipse5 from "@/assets/Ellipse 12.png"
 import ellipse6 from "@/assets/Ellipse 6.png"
 import logo from "@/assets/logo.png"
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
+import Navbar from '@/components/Sidebar'
 import { IconCompass } from '@tabler/icons-react';
 import { IconBell } from '@tabler/icons-react';
 import { IconSun } from '@tabler/icons-react';

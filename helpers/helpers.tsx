@@ -1,0 +1,128 @@
+const dummyData = {
+    "users": [
+        {
+            id: 12231,
+            firstName: "John",
+            lastName: "Nolan",
+            mobileNumber: "+966 653 345 4567",
+            email: "johnnolan@gmail.com",
+            lastAccess: "29/09/2023 12:34AM",
+            city: "Los Angeles",
+            status: "Active",
+            kyc: "false",
+            channel: "Whatsapp",
+            numberOfPredictions: 23,
+            wins: 12,
+            loss: 11,
+            valueSpent: 3500,
+            valueEarned: 55000,
+        },
+        {
+            id: 12331,
+            firstName: "Micheal",
+            lastName: "Jackson",
+            mobileNumber: "+966 453 245 4877",
+            email: "michealjackson@gmail.com",
+            lastAccess: "29/09/2023 12:34AM",
+            city: "New York",
+            status: "Inactive",
+            kyc: "true",
+            channel: "telegram",
+            numberOfPredictions: 243,
+            wins: 12,
+            loss: 231,
+            valueSpent: 780000,
+            valueEarned: 35000,
+        },
+    ],
+    "predictions": [
+        {
+            sportName: "Cricket",
+            sportCountry: "England",
+            predictionType: "Main",
+            entryPrice: 200,
+            winValue: 2000,
+            currency: "SAR",
+            win: "false",
+            reason: "for fun",
+            payment: "mastercard",
+            payout: true,
+            customerRating: "wow",
+            channel: "Whatsapp"
+        },
+        {
+            sportName: "Football",
+            sportCountry: "Spain",
+            predictionType: "Main",
+            entryPrice: 24,
+            winValue: 80000,
+            currency: "GBP",
+            win: "true",
+            reason: "nil",
+            payment: "mastercard",
+            payout: false,
+            customerRating: "happy",
+            channel: "in-app"
+        },
+        {
+            sportName: "Basketball",
+            sportCountry: "USA",
+            predictionType: "Main",
+            entryPrice: 450,
+            winValue: 6000,
+            currency: "USD",
+            win: "true",
+            reason: "paid",
+            payment: "mastercard",
+            payout: false,
+            customerRating: "happy",
+            channel: "wechat"
+        },
+        {
+            sportName: "Formula 1",
+            sportCountry: "France",
+            predictionType: "Main",
+            entryPrice: 10000,
+            winValue: 55000,
+            currency: "CAD",
+            win: "true",
+            reason: "paid",
+            payment: "mastercard",
+            payout: false,
+            customerRating: "happy",
+            channel: "webpage"
+        },
+    ],
+    "Departments": [
+        {
+            name: "Cricket Watch",
+            type: "main",
+            creator: "John Nolan",
+            date: "29/09/2023 12:34AM"
+        },
+    ],
+    "Issues": [
+        {
+            id: 12231,
+            creator: "John Nolan",
+            channel: "in-app",
+            type: "payments",
+            userID: "HV-196728628-1",
+            status: "closed",
+            cccenter: "Big Boss",
+            date: "28/09/2023 12:34 AM",
+            ticketNo: "121",
+        },
+    ],
+    "Notifications": [
+        {
+            title: "Hello",
+            content: "Welcome to AgentX add your card now",
+            reciever: "user",
+            channel: "in-app",
+            status: "sent",
+        },
+    ]
+}
+
+export default dummyData

@@ -13,7 +13,7 @@ import lightLogo from "@/assets/light-logo.png"
 
 const Hero = () => {
     return (
-        <div className=' w-screen h-screen bg-white dark:bg-[#000000] relative flex items-center justify-center'>
+        <div className=' w-screen h-screen bg-[#EDEDED] dark:bg-[#121212] relative flex items-center justify-center'>
             <div className=' absolute h-full w-full bg-transparent flex items-center justify-center z-[3]'>
                 <Image
                     src={ellipse}
