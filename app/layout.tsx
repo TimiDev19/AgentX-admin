@@ -39,7 +39,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className} flex h-screen overflow-y-scroll overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className} min-h-screen overflow-y-auto`}
       >
         <Sidebar />
         <main className="flex-1 h-screen overflow-y-auto">
