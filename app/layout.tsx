@@ -39,7 +39,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className}`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className} className=" h-[100vh] w-[100vw] overflow-y-scroll scrollbar-hide"`}
       >
         <Sidebar />
         <main className=" h-[100vh] w-[100vw] overflow-y-scroll scrollbar-hide">
