@@ -10,7 +10,7 @@ import ellipse5 from "@/assets/Ellipse 12.png"
 import ellipse6 from "@/assets/Ellipse 6.png"
 import logo from "@/assets/logo.png"
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
+
 import SendRoundedIcon from '@mui/icons-material/SendRounded';
 
 const page = () => {
