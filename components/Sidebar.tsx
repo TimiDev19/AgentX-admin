@@ -170,7 +170,7 @@ const Sidebar = () => {
                 <Image src={logo} alt='' className='dark:hidden flex mb-[60px]' />
                 <Image src={darkLogo} alt='' className='dark:flex hidden mb-[60px]' />
 
-                <Link href={"/"} className={getLinkClasses("/")}>
+                <Link href={"/dashboard"} className={getLinkClasses("/")}>
                     <IconDashboard size={32} stroke={1} className='mr-[20px]' />
                     Dashboard
                 </Link>
@@ -213,9 +213,9 @@ const Sidebar = () => {
                 </div>
 
                 <div className='w-[90%] mx-auto'>
-                    <div className='cursor-pointer w-full flex items-center justify-end text-black dark:text-white'>
+                    <Link href={"/logout"} className='cursor-pointer w-full flex items-center justify-end text-black dark:text-white'>
                         <IconLogout size={28} stroke={1} />
-                    </div>
+                    </Link>
                     <div className='text-center w-full flex flex-col items-center justify-center'>
                         <div className='h-[80px] w-[80px] rounded-full bg-transparent mb-4'>
                             <Image src={sideImg} alt='' className='h-[80px] w-[80px] rounded-full' />

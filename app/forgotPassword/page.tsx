@@ -596,23 +596,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" w-[95%] mb-[20px]">
-            <label className=" text-[#0000008C] dark:text-[#FFFFFF8C] text-[13px] mb-3">Password</label>
-            <div className=" flex items-center justify-center border border-[#0000001A] dark:border-[#FFFFFF1A] rounded-xl w-full p-[5px]">
-
-              <input type="password" className="w-full bg-transparent dark:text-white focus:outline-none px-2" />
-            </div>
-          </div>
-
           <Link
-            href={"/forgotPassword"}
-            className=" font-[14px] text-[#121212] dark:text-[#AB4FA8] mb-[20px] hover:text-[#121212]/60 hover:dark:text-[#AB4FA8]/60 duration-500"
-          >
-            Forgot Password?
-          </Link>
-
-          <Link
-            href={"/authOTP"}
+            href={"/forgotPassword/otp"}
             className=" w-full flex items-center justify-center text-white bg-black dark:bg-[#AB4FA8] h-[48px] rounded-2xl"
           >
             Verify
