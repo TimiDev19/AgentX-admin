@@ -42,7 +42,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className}`}
       >
         <Sidebar />
-        <main>
+        <main className=" h-[100vh] w-[100vw] overflow-y-scroll">
           {children}
         </main>
       </body>
