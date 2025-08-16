@@ -1,3 +1,5 @@
+"use client"
+import { useRouter } from 'next/navigation'
 import { IconFilter, IconRefresh, IconSearch } from '@tabler/icons-react'
 import Link from 'next/link'
 import React from 'react'
@@ -11,7 +13,12 @@ import {
     TableRow,
 } from "@/components/ui/table"
 
+
 const page = () => {
+    const router = useRouter();
+    const nav = () => {
+        router.push('/userManagement/customerDetails');
+    }
     return (
         <div className='pl-[20vw] pr-[3vw] h-[100vh] w-[100vw] scrollbar-hide overflow-y-scroll bg-[#EDEDED] dark:bg-[#121212] py-[10px] text-black'>
             <div className=" w-full h-[35px] flex items-center justify-between mb-[20px]">
@@ -99,10 +106,11 @@ const page = () => {
                             </TableRow>
                         </TableHeader>
                         <TableBody className=' dark:text-white'>
-                            <TableRow className=' border-b dark:border-b-[#1A1A1A] border-b-[#0000001A] mb-[10px] h-[80px]'>
+                            <TableRow onClick={nav} className=' border-b dark:border-b-[#1A1A1A] border-b-[#0000001A] mb-[10px] h-[80px] hover:bg-muted/50 duration-500 cursor-pointer'>
                                 <TableCell>
                                     <Link
-                                        href={""}
+                                        href={"/userManagement/customerDetails"}
+                                        className=' hover:text-[#AB4FA8] duration-500 hover:underline'
                                     >
                                         11237292
                                     </Link>

@@ -1,3 +1,5 @@
+"use client"
+import { useRouter } from 'next/navigation'
 import { IconFilter, IconRefresh, IconSearch } from '@tabler/icons-react'
 import Link from 'next/link'
 import React from 'react'
@@ -12,6 +14,10 @@ import {
 } from "@/components/ui/table"
 
 const page = () => {
+    const router = useRouter();
+    const nav = () => {
+        router.push('/userManagement/management/managementDetails');
+    }
     return (
         <div className='pl-[20vw] pr-[3vw] h-[100vh] w-[100vw] scrollbar-hide overflow-y-scroll bg-[#EDEDED] dark:bg-[#121212] py-[10px] text-black'>
             <div className=" w-full h-[35px] flex items-center justify-between mb-[20px]">
@@ -84,7 +90,7 @@ const page = () => {
                             </TableRow>
                         </TableHeader>
                         <TableBody>
-                            <TableRow className=' border-b dark:border-b-[#1A1A1A] border-b-[#0000001A] mb-[10px] h-[80px] dark:text-white'>
+                            <TableRow onClick={nav} className=' border-b dark:border-b-[#1A1A1A] border-b-[#0000001A] mb-[10px] h-[80px] dark:text-white cursor-pointer'>
                                 <TableCell>11237292</TableCell>
                                 <TableCell>John Jacob</TableCell>
                                 <TableCell>+966 52 627 2829</TableCell>
