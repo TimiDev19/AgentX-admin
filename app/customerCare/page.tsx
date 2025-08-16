@@ -1,3 +1,4 @@
+"use client"
 import DoughnutChart from '@/components/charts/DoughnutChart'
 import { IconFilter, IconRefresh, IconSearch } from '@tabler/icons-react'
 import Link from 'next/link'
@@ -13,8 +14,15 @@ import {
 } from "@/components/ui/table"
 import dummyData from '@/helpers/helpers'
 import { webpack } from 'next/dist/compiled/webpack/webpack'
+import { useRouter } from 'next/navigation'
 
 const page = () => {
+
+    const router = useRouter()
+
+    const nav = () => {
+        router.push('/customerCare/ticketDetails/')
+    }
 
     const predictions = dummyData.Issues.filter((issue) => {
         return issue.type === "predictions"
@@ -251,7 +259,7 @@ const page = () => {
                                 <TableHead>Creator</TableHead>
                             </TableRow>
                         </TableHeader>
-                        <TableBody>
+                        <TableBody onClick={nav} className=' cursor-pointer'>
                             {
                                 dummyData.Issues.map((issue, index) => (
                                     <TableRow key={index} className=' border-b dark:text-white dark:border-b-[#1A1A1A] border-b-[#0000001A] mb-[10px] h-[80px]'>
