@@ -225,7 +225,7 @@ const page = () => {
                     </div>
 
                     <Link
-                        href={"/dashboard"}
+                        href={"/addUser/sucsess"}
                         className=" w-[330px] mx-auto flex items-center justify-center text-white bg-[#000] dark:bg-[#AB4FA8] hover:bg-[black]/60 dark:hover:bg-[#AB4FA8]/60 duration-500 h-[48px] rounded-xl"
                     >
                         Add

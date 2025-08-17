@@ -128,15 +128,15 @@ const page = () => {
                                         <TableCell>{prediction.currency}</TableCell>
                                         <TableCell>
                                             <div className=' h-[80px] flex items-center justify-start text-white'>
-                                                <button className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[15px]'>
+                                                <Link href={"/updatePrediction"} className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[15px]'>
                                                     Edit
-                                                </button>
-                                                <button className=' py-[10px] px-[20px] rounded-xl bg-red-500 mx-[15px]'>
+                                                </Link>
+                                                <Link href={"/deletePrediction"} className=' py-[10px] px-[20px] rounded-xl bg-red-500 mx-[15px]'>
                                                     Delete
-                                                </button>
-                                                <button className=' py-[10px] px-[20px] rounded-xl bg-[#CE2BDD] mx-[15px]'>
+                                                </Link>
+                                                <Link href={"/blockPrediction"} className=' py-[10px] px-[20px] rounded-xl bg-[#CE2BDD] mx-[15px]'>
                                                     Block
-                                                </button>
+                                                </Link>
                                             </div>
                                         </TableCell>
                                     </TableRow>

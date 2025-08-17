@@ -88,7 +88,7 @@ const page = () => {
                         />
                     </div>
                     <button className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
-                        Create Bot
+                        Create Flow
                     </button>
                 </div>
 
@@ -111,7 +111,7 @@ const page = () => {
                                 <TableCell>
                                     <div
                                         onClick={() => setIsEnabled(!isEnabled)}
-                                        className={`duration-500 cursor-pointer w-[42px] p-1 h-[24px] rounded-full flex items-center ${isEnabled && 'justify-end bg-[#AB4FA8]'} ${!isEnabled && "bg-[#E8E8E8]"} justify-start`}
+                                        className={`duration-500 cursor-pointer w-[42px] p-1 h-[24px] rounded-full flex items-center ${isEnabled && 'justify-end bg-[#AB4FA8]'} ${!isEnabled && "bg-[#E8E8E8] dark:bg-[#1B1B1B]"} justify-start`}
                                     >
                                         <div className='h-[20px] w-[20px] rounded-full bg-white'></div>
                                     </div>

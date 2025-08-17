@@ -607,12 +607,13 @@ const page = () => {
                         />
                     </div>
 
-                    <div className=' w-full flex items-center justify-center'>
-                        <button
-                            className="cursor-pointer h-[48px] bg-black text-white w-[330px] mx-auto dark:bg-[#AB4FA8] mt-[20px] rounded-2xl"
+                    <div className=' w-full flex items-center justify-center mt-[10px]'>
+                        <Link
+                            href={"/masterControl/aboutUs/otp"}
+                            className=' h-[48px] px-[10px] w-[330px] flex items-center justify-center bg-black text-white dark:bg-[#AB4FA8] rounded-2xl'
                         >
                             Publish
-                        </button>
+                        </Link>
                     </div>
                 </form>
             </div>

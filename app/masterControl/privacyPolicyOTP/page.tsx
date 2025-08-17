@@ -1,0 +1,64 @@
+"use client"
+import BarChart from "@/components/charts/BarChart";
+import DoughnutChart from "@/components/charts/DoughnutChart";
+import Homepage from "@/components/Homepage/Homepage";
+import { IconArrowDown, IconArrowUp, IconCalendar, IconCheck, IconGlobe, IconNetwork, IconRefresh } from "@tabler/icons-react";
+import { useState } from "react";
+import loginLogo from "@/assets/login_logo.png"
+import Image from "next/image";
+import dummyData from "@/helpers/helpers";
+import Link from "next/link";
+import ellipse from "@/assets/biggest.png"
+import ellipse1 from "@/assets/second-biggest.png"
+import ellipse2 from "@/assets/Ellipse 15.png"
+import ellipse3 from "@/assets/Ellipse 14.png"
+import ellipse4 from "@/assets/Ellipse 13.png"
+import ellipse5 from "@/assets/Ellipse 12.png"
+import sideImg from '@/assets/sidebar-profile.png'
+
+const page = () => {
+    return (
+        <div className=" z-[100] h-[100vh] w-[100vw] bg-[#F5F5F5] dark:bg-[#121212] relative flex items-center justify-center overflow-y-hidden">
+            <div className=" flex items-start justify-center">
+                <div className=" z-[10] max-h-[452px] w-[378px] bg-white dark:bg-black rounded-xl p-[30px] flex flex-col items-start justify-start">
+                    <h1 className=" font-bold text-[20px] mb-[20px] dark:text-white">Enter OTP</h1>
+
+                    <div className="bg-transparent flex flex-col items-center justify-start w-[100%] rounded-2xl">
+                        <div className=" w-full flex items-center justify-between mb-2">
+                            <p className=" text-[#00000080] dark:text-[#FFFFFF80] text-[13px] font-bold">Send To</p>
+                        </div>
+                        <div className=" w-full flex items-center justify-between mb-2">
+                            <input type="text" className=" text-black dark:text-white bg-transparent border border-[#0000001A] dark:border-[#FFFFFF1A] rounded-xl p-2 focus:outline-none w-[362px]" ></input>
+                        </div>
+                    </div>
+
+                    <div className="bg-transparent flex flex-col items-center justify-start w-[100%] rounded-2xl mb-[10px]">
+                        <div className=" w-full flex items-center justify-between mb-2">
+                            <p className=" text-[#00000080] dark:text-[#FFFFFF80] text-[13px] font-bold">Enter OTP</p>
+                        </div>
+                        <div className=" w-full flex items-center justify-between mb-2">
+                            <input type="text" className=" text-black dark:text-white bg-transparent border border-[#0000001A] dark:border-[#FFFFFF1A] rounded-xl p-2 focus:outline-none w-[362px]" ></input>
+                        </div>
+                    </div>
+
+                    <Link
+                        href={""}
+                        className=" text-[14px] text-[#121212] w-fit mx-auto font-bold dark:text-[#AB4FA8] mb-[20px] hover:text-[#121212]/60 hover:dark:text-[#AB4FA8]/60 duration-500"
+                    >
+                        Send OTP
+                    </Link>
+
+                    <Link
+                        href={"/masterControl/privacyPolicySuccess"}
+                        className=" w-full flex items-center justify-center text-white bg-[#000] dark:bg-[#AB4FA8] hover:bg-[black]/60 dark:hover:bg-[#AB4FA8]/60 duration-500 h-[48px] rounded-2xl"
+                    >
+                        Verify
+                    </Link>
+                </div>
+                <Link href={"/masterControl/privacyPolicySuccess"} className=" z-[10] h-[32px] w-[32px] bg-[#0000004D] dark:bg-[#FFFFFF4D] cursor-pointer rounded-full ml-4 text-black dark:text-white flex items-center justify-center">X</Link>
+            </div>
+        </div>
+    )
+}
+
+export default page

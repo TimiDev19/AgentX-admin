@@ -150,9 +150,9 @@ const page = () => {
                                 <TableCell>+966 53 627 2789</TableCell>
                                 <TableCell>
                                     <div className=' h-[80px] flex items-center justify-start text-white'>
-                                        <button className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[0px]'>
+                                        <Link href={"/masterControl/otpControl/addUpdateNumber"} className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[0px]'>
                                             Edit
-                                        </button>
+                                        </Link>
                                         {/* <button className=' py-[10px] px-[20px] rounded-xl bg-red-500 mx-[15px]'>
                                             Delete
                                         </button>

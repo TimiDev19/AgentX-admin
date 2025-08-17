@@ -56,7 +56,7 @@ const page = () => {
 
             <div className=' w-full h-[700px] bg-white dark:bg-black rounded-xl p-[20px]'>
                 <div className=' w-full flex items-center justify-between'>
-                    <div className=' flex w-[85%] h-[48px] bg-[#F5F5F5] dark:bg-[#121212] rounded-xl text-[#00000080] dark:text-[#FFFFFF80] items-center justify-center'>
+                    <div className=' flex w-[75%] h-[48px] bg-[#F5F5F5] dark:bg-[#121212] rounded-xl text-[#00000080] dark:text-[#FFFFFF80] items-center justify-center'>
                         <div className='pr-[15px] h-full border-r border-r-[#0000001A] dark:border-r-[#FFFFFF1A] flex items-center justify-center'>
                             <IconFilter stroke={1} size={28} className='mx-2' />
                             <select name="" id="" className=' bg-transparent focus:outline-none'>
@@ -72,6 +72,9 @@ const page = () => {
                     </div>
                     <Link href={'/exportReport'} className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
                         Export Report
+                    </Link>
+                    <Link href={'/addUser'} className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
+                        Add User
                     </Link>
                 </div>
 

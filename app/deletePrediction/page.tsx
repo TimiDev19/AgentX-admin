@@ -14,12 +14,12 @@ import ellipse2 from "@/assets/Ellipse 15.png"
 import ellipse3 from "@/assets/Ellipse 14.png"
 import ellipse4 from "@/assets/Ellipse 13.png"
 import ellipse5 from "@/assets/Ellipse 12.png"
-import ellipse6 from "@/assets/Ellipse 6.png"
+import sideImg from '@/assets/sidebar-profile.png'
 
 const page = () => {
     return (
         <div className=" z-[100] h-[100vh] w-[100vw] bg-[#F5F5F5] dark:bg-[#121212] relative flex items-center justify-center overflow-y-hidden">
-            <div className=' absolute h-full w-full bg-transparent flex items-center justify-center z-[3]'>
+            {/* <div className=' absolute h-full w-full bg-transparent flex items-center justify-center z-[3]'>
                 <Image
                     src={ellipse}
                     alt=''
@@ -60,36 +60,19 @@ const page = () => {
                     alt=''
                     className=''
                 />
-            </div>
-            <div className=" z-[10] max-h-[452px] w-[378px] bg-white dark:bg-black rounded-3xl p-[30px] flex flex-col items-center justify-start">
-                <Image
-                    src={loginLogo}
-                    alt=""
-                    className=" mb-[20px]"
-                />
-                <h1 className=" font-bold text-[20px] mb-[20px] dark:text-white">Welcome To Agent X</h1>
-                <div className=" w-[95%] mb-[20px]">
-                    <label className=" text-[#0000008C] dark:text-[#FFFFFF8C] text-[13px] mb-3">Set New Password</label>
-                    <div className=" flex items-center justify-center border border-[#0000001A] dark:border-[#FFFFFF1A] rounded-xl w-full p-[5px]">
+            </div> */}
+            <div className=" flex items-start justify-center">
+                <div className=" z-[10] max-h-[452px] w-[378px] bg-white dark:bg-black rounded-xl p-[30px] flex flex-col items-center justify-start">
+                    <h1 className=" font-bold text-[20px] mb-[20px] dark:text-white">You Sure You want to delete the Prediction?</h1>
 
-                        <input type="password" className="w-full bg-transparent dark:text-white focus:outline-none px-2" />
-                    </div>
+                    <Link
+                        href={"/deletePrediction/success"}
+                        className=" w-full flex items-center justify-center text-white bg-[#EC5C4D] dark:bg-[#EC5C4D] hover:bg-[#EC5C4D]/60 duration-500 h-[48px] rounded-2xl"
+                    >
+                        Delete
+                    </Link>
                 </div>
-
-                <div className=" w-[95%] mb-[20px]">
-                    <label className=" text-[#0000008C] dark:text-[#FFFFFF8C] text-[13px] mb-3">Confirm New Password</label>
-                    <div className=" flex items-center justify-center border border-[#0000001A] dark:border-[#FFFFFF1A] rounded-xl w-full p-[5px]">
-
-                        <input type="password" className="w-full bg-transparent dark:text-white focus:outline-none px-2" />
-                    </div>
-                </div>
-
-                <Link
-                    href={"/passwordChangeSucessful"}
-                    className=" w-full flex items-center justify-center text-white bg-black dark:bg-[#AB4FA8] h-[48px] rounded-2xl"
-                >
-                    Change
-                </Link>
+                <Link href={"/masterControl/predictionManagement"} className=" z-[10] h-[32px] w-[32px] bg-[#0000004D] dark:bg-[#FFFFFF4D] cursor-pointer rounded-full ml-4 text-black dark:text-white flex items-center justify-center">X</Link>
             </div>
         </div>
     )

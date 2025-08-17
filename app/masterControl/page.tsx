@@ -136,11 +136,12 @@ const page = () => {
         </div>
 
         <div className=' w-full flex items-center justify-end mt-[15px]'>
-          <button
-            className=' h-[48px] px-[10px] bg-black text-white dark:bg-[#AB4FA8] rounded-2xl'
+          <Link
+            href={"/masterControl/privacyPolicyOTP"}
+            className=' h-[48px] px-[10px] flex items-center justify-center bg-black text-white dark:bg-[#AB4FA8] rounded-2xl'
           >
             Save Changes
-          </button>
+          </Link>
         </div>
       </div>
     </div>
