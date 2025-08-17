@@ -94,9 +94,9 @@ const page = () => {
                             placeholder='Search'
                         />
                     </div>
-                    <button className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
+                    <Link href={"/addNotification"} className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
                         Add New
-                    </button>
+                    </Link>
                 </div>
 
                 <Table>
@@ -119,9 +119,9 @@ const page = () => {
                             <TableCell>Sent</TableCell>
                             <TableCell>
                                 <div className=' h-[80px] flex items-center justify-start text-white'>
-                                    <button className=' py-[10px] px-[20px] rounded-xl bg-red-500 mr-[15px]'>
+                                    <Link href={"/deleteNotification"} className=' py-[10px] px-[20px] rounded-xl bg-red-500 mr-[15px]'>
                                         Delete
-                                    </button>
+                                    </Link>
                                 </div>
                             </TableCell>
                         </TableRow>

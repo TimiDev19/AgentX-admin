@@ -153,7 +153,7 @@ const page = () => {
 
             <div className=' mb-[20px] w-full h-[96px] bg-white dark:bg-black rounded-2xl flex items-center justify-center'>
                 <Link
-                    href={"/customerCare/ticketClosed/"}
+                    href={"/customerCare/ticketCloseVerify/"}
                     className=" w-[209px] flex items-center justify-center text-white bg-black dark:bg-[#AB4FA8] h-[48px] rounded-2xl"
                 >
                     Review and Close Ticket

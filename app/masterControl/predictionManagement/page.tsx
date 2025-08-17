@@ -98,9 +98,9 @@ const page = () => {
                     <button className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
                         Export Report
                     </button>
-                    <button className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
+                    <Link href={"/addPrediction"} className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
                         Add Prediction
-                    </button>
+                    </Link>
                 </div>
 
                 <div className=' w-full overflow-x-scroll mt-[20px] h-[600px] overflow-y-scroll scrollbar-hide'>
