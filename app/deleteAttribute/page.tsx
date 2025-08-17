@@ -63,16 +63,16 @@ const page = () => {
             </div> */}
             <div className=" flex items-start justify-center">
                 <div className=" z-[10] max-h-[452px] w-[378px] bg-white dark:bg-black rounded-xl p-[30px] flex flex-col items-center justify-start">
-                    <h1 className=" font-bold text-[20px] mb-[20px] dark:text-white">You Sure You want to delete this Notification?</h1>
+                    <h1 className=" font-bold text-[20px] mb-[20px] text-center dark:text-white">You Sure You want to delete this attribute?</h1>
 
                     <Link
-                        href={"/deleteNotification/success"}
+                        href={"/chatBot/customeAttributes"}
                         className=" w-full flex items-center justify-center text-white bg-[#EC5C4D] dark:bg-[#EC5C4D] hover:bg-[#EC5C4D]/60 duration-500 h-[48px] rounded-2xl"
                     >
                         Delete
                     </Link>
                 </div>
-                <Link href={"/communication"} className=" z-[10] h-[32px] w-[32px] bg-[#0000004D] dark:bg-[#FFFFFF4D] cursor-pointer rounded-full ml-4 text-black dark:text-white flex items-center justify-center">X</Link>
+                <Link href={"/chatBot/customeAttributes"} className=" z-[10] h-[32px] w-[32px] bg-[#0000004D] dark:bg-[#FFFFFF4D] cursor-pointer rounded-full ml-4 text-black dark:text-white flex items-center justify-center">X</Link>
             </div>
         </div>
     )

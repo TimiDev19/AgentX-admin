@@ -2,7 +2,7 @@
 import BarChart from "@/components/charts/BarChart";
 import DoughnutChart from "@/components/charts/DoughnutChart";
 import Homepage from "@/components/Homepage/Homepage";
-import { IconArrowDown, IconArrowUp, IconCalendar, IconGlobe, IconNetwork, IconRefresh } from "@tabler/icons-react";
+import { IconArrowDown, IconArrowUp, IconCalendar, IconCheck, IconGlobe, IconNetwork, IconRefresh } from "@tabler/icons-react";
 import { useState } from "react";
 import loginLogo from "@/assets/login_logo.png"
 import Image from "next/image";
@@ -63,13 +63,16 @@ const page = () => {
             </div> */}
             <div className=" flex items-start justify-center">
                 <div className=" z-[10] max-h-[452px] w-[378px] bg-white dark:bg-black rounded-xl p-[30px] flex flex-col items-center justify-start">
-                    <h1 className=" font-bold text-[20px] mb-[20px] dark:text-white">You Sure You want to delete this Notification?</h1>
+                    <div className=' text-[#13B542] dark:text-[#13B542] p-2 border-2 border-[#13B542] rounded-full mb-[10px]'>
+                        <IconCheck size={28} stroke={2} className='' />
+                    </div>
+                    <h1 className=" font-bold text-[20px] mb-[20px] dark:text-white text-center">Notification deleted successfully!</h1>
 
                     <Link
-                        href={"/deleteNotification/success"}
-                        className=" w-full flex items-center justify-center text-white bg-[#EC5C4D] dark:bg-[#EC5C4D] hover:bg-[#EC5C4D]/60 duration-500 h-[48px] rounded-2xl"
+                        href={"/communication"}
+                        className=" w-full flex items-center justify-center text-white bg-[#000] dark:bg-[#AB4FA8] hover:bg-[black]/60 dark:hover:bg-[#AB4FA8]/60 duration-500 h-[48px] rounded-2xl"
                     >
-                        Delete
+                        Back
                     </Link>
                 </div>
                 <Link href={"/communication"} className=" z-[10] h-[32px] w-[32px] bg-[#0000004D] dark:bg-[#FFFFFF4D] cursor-pointer rounded-full ml-4 text-black dark:text-white flex items-center justify-center">X</Link>

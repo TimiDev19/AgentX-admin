@@ -109,12 +109,12 @@ const page = () => {
                                 <TableCell>Approved</TableCell>
                                 <TableCell>
                                     <div className=' h-[80px] flex items-center justify-start text-white'>
-                                        <button className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[5px]'>
+                                    <Link href={""} className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[5px]'>
                                             Edit
-                                        </button>
-                                        <button className=' py-[10px] px-[20px] rounded-xl bg-red-500 mx-[5px]'>
+                                        </Link>
+                                        <Link href={"/deleteTemplate"} className=' py-[10px] px-[20px] rounded-xl bg-red-500 mx-[5px]'>
                                             Delete
-                                        </button>
+                                        </Link>
                                     </div>
                                 </TableCell>
                             </TableRow>

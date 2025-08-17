@@ -107,9 +107,12 @@ const page = () => {
                                 <TableCell>For Logistics</TableCell>
                                 <TableCell>
                                     <div className=' h-[80px] flex items-center justify-start text-white'>
-                                        <button className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[5px]'>
+                                        <Link href={""} className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[5px]'>
                                             Edit
-                                        </button>
+                                        </Link>
+                                        <Link href={"/delete3pi"} className=' py-[10px] px-[20px] rounded-xl bg-red-500 mx-[5px]'>
+                                            Delete
+                                        </Link>
                                     </div>
                                 </TableCell>
                             </TableRow>
