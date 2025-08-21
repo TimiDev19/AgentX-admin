@@ -67,7 +67,7 @@ const page = () => {
                     alt=""
                     className=" mb-[20px]"
                 />
-                <h1 className=" font-bold text-[20px] mb-[20px] dark:text-white">Welcome To Agent X</h1>
+                <h1 className=" font-bold text-[20px] mb-[20px] dark:text-white">Welcome John Jacob</h1>
                 <div className=" w-[95%] mb-[20px]">
                     <label className=" text-[#0000008C] dark:text-[#FFFFFF8C] text-[13px] mb-3">Set New Password</label>
                     <div className=" flex items-center justify-center border border-[#0000001A] dark:border-[#FFFFFF1A] rounded-xl w-full p-[5px]">

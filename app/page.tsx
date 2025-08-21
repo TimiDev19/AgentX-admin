@@ -589,7 +589,7 @@ export default function Home() {
           <div className=" w-[95%] mb-[20px]">
             <label className=" text-[#0000008C] dark:text-[#FFFFFF8C] text-[13px] mb-3">Mobile No.</label>
             <div className=" flex items-center justify-center border border-[#0000001A] dark:border-[#FFFFFF1A] rounded-xl w-full p-[5px]">
-              <select className=" w-[25%] bg-transparent dark:text-white appearance-none focus:outline-none" name="" id="">
+              <select className=" w-[25%] border-r border-r-[#000000] dark:border-r-[#FFFFFF1A] bg-transparent dark:text-white appearance-none focus:outline-none" name="" id="">
                 <option value="">+966</option>
               </select>
               <input type="number" className="w-[75%] bg-transparent dark:text-white border-l border-l-[#0000001A] focus:outline-none px-2" />

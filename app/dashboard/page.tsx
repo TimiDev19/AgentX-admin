@@ -269,7 +269,7 @@ const page = () => {
                 </div>
             </div>
 
-            <div className=" w-full flex items-center justify-between bg-transparent mb-[20px] h-[476px]">
+            <div className=" w-full flex items-start justify-between bg-transparent mb-[20px] min-h-[476px]">
                 <div className=" w-[49%] h-full bg-white dark:bg-black dark:text-white rounded-2xl p-[15px] flex flex-col items-center justify-between">
                     <div className=" w-full mb-[30px] flex items-center justify-between">
                         <h1 className=" text-xl font-bold">Prediction Type</h1>
@@ -318,7 +318,7 @@ const page = () => {
                     </div>
                 </div>
 
-                <div className=" w-[49%] h-full bg-white dark:bg-black dark:text-white rounded-2xl p-[15px] flex flex-col items-center justify-between">
+                <div className=" w-[49%] min-h-[476px] bg-white dark:bg-black dark:text-white rounded-2xl p-[15px] flex flex-col items-center justify-between">
                     <div className=" w-full mb-[30px] flex items-center justify-between">
                         <h1 className=" text-xl font-bold">Payments</h1>
 
@@ -330,9 +330,9 @@ const page = () => {
 
                     <div className=" w-full flex mb-[30px] items-center justify-center h-[228px]">
                         <DoughnutChart
-                            labels={['Cards', 'Apple Pay', 'Others']}
-                            data={[mastercard.length, 29, 19]}
-                            colors={['#3B82F6', '#166534', '#3F3F46']} // blue, green, gray
+                            labels={['Mastercard', 'VISA', 'Apple Pay', 'Google Play', 'WeChat', 'Alipay', 'Binance', 'PayPal', 'Ripio', 'Bitso', 'Kraken']}
+                            data={[mastercard.length + 1000, 1029, 1029, 1029, 1029, 1029, 1029, 1029, 1029, 1029, 1029]}
+                            colors={['#4DAAE2', '#265D35', '#5D2FD1', '#B4304F', '#DC2797', '#3357D9', '#4DED7B', '#F88A36', '#2E1AA0', '#851A85', '#282828']} // blue, green, gray
                         />
                     </div>
 
@@ -340,28 +340,100 @@ const page = () => {
                         <div className=" w-full flex items-center justify-between px-[20px] mb-4">
                             <div className=" flex items-center justify-start">
                                 <div className=" h-[12px] w-[12px] bg-[#4DAAE2] rounded-full mr-[12px]"></div>
-                                <p className=" text-[#00000080] dark:text-[#FFFFFF80]">Cards</p>
+                                <p className=" text-[#00000080] dark:text-[#FFFFFF80]">Mastercard</p>
                             </div>
 
-                            <h1 className=" text-black dark:text-white font-semibold">{mastercard.length}</h1>
+                            <h1 className=" text-black dark:text-white font-semibold">{mastercard.length + 1000}</h1>
                         </div>
 
                         <div className=" w-full flex items-center justify-between px-[20px] mb-4">
                             <div className=" flex items-center justify-start">
-                                <div className=" h-[12px] w-[12px] bg-[#2B874E] rounded-full mr-[12px]"></div>
+                                <div className=" h-[12px] w-[12px] bg-[#265D35] rounded-full mr-[12px]"></div>
+                                <p className=" text-[#00000080] dark:text-[#FFFFFF80]">VISA</p>
+                            </div>
+
+                            <h1 className=" text-black dark:text-white font-semibold">1029</h1>
+                        </div>
+
+                        <div className=" w-full flex items-center justify-between px-[20px] mb-4">
+                            <div className=" flex items-center justify-start">
+                                <div className=" h-[12px] w-[12px] bg-[#5D2FD1] rounded-full mr-[12px]"></div>
                                 <p className=" text-[#00000080] dark:text-[#FFFFFF80]">Apple Pay</p>
                             </div>
 
-                            <h1 className=" text-black dark:text-white font-semibold">29</h1>
+                            <h1 className=" text-black dark:text-white font-semibold">1029</h1>
                         </div>
 
-                        <div className=" w-full flex items-center justify-between px-[20px]">
+                        <div className=" w-full flex items-center justify-between px-[20px] mb-4">
                             <div className=" flex items-center justify-start">
-                                <div className=" h-[12px] w-[12px] bg-[#A9A9A9] rounded-full mr-[12px]"></div>
-                                <p className=" text-[#00000080] dark:text-[#FFFFFF80]">Others</p>
+                                <div className=" h-[12px] w-[12px] bg-[#B4304F] rounded-full mr-[12px]"></div>
+                                <p className=" text-[#00000080] dark:text-[#FFFFFF80]">Google Pay</p>
                             </div>
 
-                            <h1 className=" text-black dark:text-white font-semibold">19</h1>
+                            <h1 className=" text-black dark:text-white font-semibold">1029</h1>
+                        </div>
+
+                        <div className=" w-full flex items-center justify-between px-[20px] mb-4">
+                            <div className=" flex items-center justify-start">
+                                <div className=" h-[12px] w-[12px] bg-[#DC2797] rounded-full mr-[12px]"></div>
+                                <p className=" text-[#00000080] dark:text-[#FFFFFF80]">WeChat</p>
+                            </div>
+
+                            <h1 className=" text-black dark:text-white font-semibold">1029</h1>
+                        </div>
+
+                        <div className=" w-full flex items-center justify-between px-[20px] mb-4">
+                            <div className=" flex items-center justify-start">
+                                <div className=" h-[12px] w-[12px] bg-[#3357D9] rounded-full mr-[12px]"></div>
+                                <p className=" text-[#00000080] dark:text-[#FFFFFF80]">Alipay</p>
+                            </div>
+
+                            <h1 className=" text-black dark:text-white font-semibold">1029</h1>
+                        </div>
+
+                        <div className=" w-full flex items-center justify-between px-[20px] mb-4">
+                            <div className=" flex items-center justify-start">
+                                <div className=" h-[12px] w-[12px] bg-[#4DED7B] rounded-full mr-[12px]"></div>
+                                <p className=" text-[#00000080] dark:text-[#FFFFFF80]">Binance</p>
+                            </div>
+
+                            <h1 className=" text-black dark:text-white font-semibold">1029</h1>
+                        </div>
+
+                        <div className=" w-full flex items-center justify-between px-[20px] mb-4">
+                            <div className=" flex items-center justify-start">
+                                <div className=" h-[12px] w-[12px] bg-[#F88A36] rounded-full mr-[12px]"></div>
+                                <p className=" text-[#00000080] dark:text-[#FFFFFF80]">Paypal</p>
+                            </div>
+
+                            <h1 className=" text-black dark:text-white font-semibold">1029</h1>
+                        </div>
+
+                        <div className=" w-full flex items-center justify-between px-[20px] mb-4">
+                            <div className=" flex items-center justify-start">
+                                <div className=" h-[12px] w-[12px] bg-[#2E1AA0] rounded-full mr-[12px]"></div>
+                                <p className=" text-[#00000080] dark:text-[#FFFFFF80]">Ripio</p>
+                            </div>
+
+                            <h1 className=" text-black dark:text-white font-semibold">1029</h1>
+                        </div>
+
+                        <div className=" w-full flex items-center justify-between px-[20px] mb-4">
+                            <div className=" flex items-center justify-start">
+                                <div className=" h-[12px] w-[12px] bg-[#851A85] rounded-full mr-[12px]"></div>
+                                <p className=" text-[#00000080] dark:text-[#FFFFFF80]">Bitso</p>
+                            </div>
+
+                            <h1 className=" text-black dark:text-white font-semibold">1029</h1>
+                        </div>
+
+                        <div className=" w-full flex items-center justify-between px-[20px] mb-4">
+                            <div className=" flex items-center justify-start">
+                                <div className=" h-[12px] w-[12px] bg-[#282828] rounded-full mr-[12px]"></div>
+                                <p className=" text-[#00000080] dark:text-[#FFFFFF80]">Kraken</p>
+                            </div>
+
+                            <h1 className=" text-black dark:text-white font-semibold">1029</h1>
                         </div>
                     </div>
                 </div>

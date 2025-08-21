@@ -87,9 +87,9 @@ const page = () => {
                             placeholder='Search'
                         />
                     </div>
-                    <button className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
-                        Create Bot
-                    </button>
+                    <Link href={"/chatBot/customeAttributes/addAttribute"} className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
+                        Add Attribute
+                    </Link>
                 </div>
 
                 <div className=' w-full mt-[20px] h-[600px] overflow-y-scroll scrollbar-hide'>
@@ -109,7 +109,7 @@ const page = () => {
                                 <TableCell>Latest Adam Flow</TableCell>
                                 <TableCell>
                                     <div className=' h-[80px] flex items-center justify-start text-white'>
-                                    <Link href={""} className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[5px]'>
+                                        <Link href={""} className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[5px]'>
                                             Edit
                                         </Link>
                                         <Link href={"/deleteAttribute"} className=' py-[10px] px-[20px] rounded-xl bg-red-500 mx-[5px]'>

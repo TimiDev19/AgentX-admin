@@ -88,7 +88,7 @@ const page = () => {
                         />
                     </div>
                     <button className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
-                        Create Bot
+                        Add API
                     </button>
                 </div>
 
@@ -109,7 +109,7 @@ const page = () => {
                                 <TableCell>https://google.com</TableCell>
                                 <TableCell>
                                     <div className=' h-[80px] flex items-center justify-start text-white'>
-                                    <Link href={""} className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[5px]'>
+                                        <Link href={"/chatBot/apis/editAPI"} className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[5px]'>
                                             Edit
                                         </Link>
                                         <Link href={"/deleteAPI"} className=' py-[10px] px-[20px] rounded-xl bg-red-500 mx-[5px]'>

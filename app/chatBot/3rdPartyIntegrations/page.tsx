@@ -73,7 +73,7 @@ const page = () => {
 
             <div className=' w-full h-[696px] bg-white dark:bg-black rounded-xl p-[20px]'>
                 <div className=' w-full flex items-center justify-between'>
-                    <div className=' flex w-[85%] h-[48px] bg-[#F5F5F5] dark:bg-[#121212] rounded-xl text-[#00000080] dark:text-[#FFFFFF80] items-center justify-center'>
+                    <div className=' flex w-[99%] h-[48px] bg-[#F5F5F5] dark:bg-[#121212] rounded-xl text-[#00000080] dark:text-[#FFFFFF80] items-center justify-center'>
                         <div className='pr-[15px] h-full border-r border-r-[#0000001A] dark:border-r-[#FFFFFF1A] flex items-center justify-center'>
                             <IconFilter stroke={1} size={28} className='mx-2' />
                             <select name="" id="" className=' bg-transparent focus:outline-none'>
@@ -87,9 +87,9 @@ const page = () => {
                             placeholder='Search'
                         />
                     </div>
-                    <button className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
+                    {/* <Link href={"/chatBot/3rdPartyIntegrations/create3rdPartyIntegration"} className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
                         Create Bot
-                    </button>
+                    </Link> */}
                 </div>
 
                 <div className=' w-full mt-[20px] h-[600px] overflow-y-scroll scrollbar-hide'>
@@ -107,12 +107,12 @@ const page = () => {
                                 <TableCell>For Logistics</TableCell>
                                 <TableCell>
                                     <div className=' h-[80px] flex items-center justify-start text-white'>
-                                        <Link href={""} className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[5px]'>
+                                        <Link href={"/chatBot/3rdPartyIntegrations/edit3rdPartyIntegration"} className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[5px]'>
                                             Edit
                                         </Link>
-                                        <Link href={"/delete3pi"} className=' py-[10px] px-[20px] rounded-xl bg-red-500 mx-[5px]'>
+                                        {/* <Link href={"/delete3pi"} className=' py-[10px] px-[20px] rounded-xl bg-red-500 mx-[5px]'>
                                             Delete
-                                        </Link>
+                                        </Link> */}
                                     </div>
                                 </TableCell>
                             </TableRow>

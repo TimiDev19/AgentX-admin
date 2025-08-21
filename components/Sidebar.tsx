@@ -170,7 +170,7 @@ const Sidebar = () => {
                 <Image src={logo} alt='' className='dark:hidden flex mb-[60px]' />
                 <Image src={darkLogo} alt='' className='dark:flex hidden mb-[60px]' />
 
-                <Link href={"/dashboard"} className={getLinkClasses("/")}>
+                <Link href={"/dashboard"} className={getLinkClasses("/dashboard")}>
                     <IconDashboard size={32} stroke={1} className='mr-[20px]' />
                     Dashboard
                 </Link>

@@ -109,7 +109,7 @@ const page = () => {
                             </div>
                         </div>
                         <Link
-                            href={"/dashboard"}
+                            href={"/chatBot"}
                             className=" w-[49%] flex items-center justify-center text-white bg-[#000] dark:bg-[#AB4FA8] hover:bg-[black]/60 dark:hover:bg-[#AB4FA8]/60 duration-500 h-[48px] rounded-2xl"
                         >
                             Add Prediction
@@ -117,7 +117,7 @@ const page = () => {
                     </div>
 
                 </div>
-                <Link href={"/dashboard"} className=" z-[10] h-[32px] w-[32px] bg-[#0000004D] dark:bg-[#FFFFFF4D] cursor-pointer rounded-full ml-4 text-black dark:text-white flex items-center justify-center">X</Link>
+                <Link href={"/chatBot"} className=" z-[10] h-[32px] w-[32px] bg-[#0000004D] dark:bg-[#FFFFFF4D] cursor-pointer rounded-full ml-4 text-black dark:text-white flex items-center justify-center">X</Link>
             </div>
         </div>
     )
