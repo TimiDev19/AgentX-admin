@@ -109,7 +109,7 @@ const page = () => {
                                 <TableCell>Approved</TableCell>
                                 <TableCell>
                                     <div className=' h-[80px] flex items-center justify-start text-white'>
-                                        <Link href={""} className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[5px]'>
+                                        <Link href={"/chatBot/whatsappTemplates/editWhatsappTemplate"} className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[5px]'>
                                             Edit
                                         </Link>
                                         <Link href={"/deleteTemplate"} className=' py-[10px] px-[20px] rounded-xl bg-red-500 mx-[5px]'>

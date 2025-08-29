@@ -66,14 +66,14 @@ const page = () => {
             <div className=' w-full py-[15px] px-[10px] text-[#00000080] dark:text-[#FFFFFF80] flex items-center justify-start bg-white dark:bg-black rounded-xl mb-[20px]'>
                 <Link
                     href={"/mastercontrol/predictionManagement"}
-                    className=' text-black dark:text-white mr-[15px]'
+                    className=' mr-[15px] hover:text-black dark:hover:text-white duration-500'
                 >
                     Prediction
                 </Link>
 
                 <Link
                     href={"/masterControl/predictionManagement/types"}
-                    className=' mr-[15px] hover:text-black dark:hover:text-white duration-500'
+                    className=' text-black dark:text-white mr-[15px]'
                 >
                     Types
                 </Link>
@@ -98,8 +98,8 @@ const page = () => {
                     <Link href={"/exportReport"} className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
                         Export Report
                     </Link>
-                    <Link href={"/addPrediction"} className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
-                        Add Prediction
+                    <Link href={"/addPredictionType"} className=' h-[48px] px-[10px] rounded-xl min:w-[137px] flex items-center justify-center text-white dark:bg-[#AB4FA8] bg-black'>
+                        Add Type
                     </Link>
                 </div>
 
@@ -107,12 +107,9 @@ const page = () => {
                     <Table>
                         <TableHeader className=' text-[#00000080] dark:text-[#FFFFFF80] border-b dark:border-b-[#1A1A1A] border-b-[#0000001A]'>
                             <TableRow>
+                                <TableHead>Prediction Title</TableHead>
                                 <TableHead>Sport Name</TableHead>
-                                <TableHead>Sport Country</TableHead>
                                 <TableHead>Prediction Type</TableHead>
-                                <TableHead>Entry Price</TableHead>
-                                <TableHead>Win Value</TableHead>
-                                <TableHead>Currency</TableHead>
                                 <TableHead>Action</TableHead>
                             </TableRow>
                         </TableHeader>
@@ -120,12 +117,9 @@ const page = () => {
                             {
                                 dummyData.predictions.map((prediction, index) => (
                                     <TableRow key={index} className=' border-b dark:text-white dark:border-b-[#1A1A1A] border-b-[#0000001A] mb-[10px] h-[80px]'>
-                                        <TableCell>{prediction.sportName}</TableCell>
                                         <TableCell>{prediction.sportCountry}</TableCell>
+                                        <TableCell>{prediction.sportName}</TableCell>
                                         <TableCell>{prediction.predictionType}</TableCell>
-                                        <TableCell>{prediction.entryPrice}</TableCell>
-                                        <TableCell>{prediction.winValue}</TableCell>
-                                        <TableCell>{prediction.currency}</TableCell>
                                         <TableCell>
                                             <div className=' h-[80px] flex items-center justify-start text-white'>
                                                 <Link href={"/updatePrediction"} className=' py-[10px] px-[20px] rounded-xl bg-black dark:bg-[#AB4FA8] mx-[15px]'>
