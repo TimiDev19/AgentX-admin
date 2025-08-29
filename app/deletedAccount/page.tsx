@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const page = () => {
     return (
-        <div className=' w-screen h-screen bg-black flex items-center justify-center'>
+        <div className=' w-[100vw] h-[100dvh] bg-black flex items-center justify-center'>
             <div className=' flex flex-col items-center justify-center text-white/30'>
                 <div className=' text-white/30 p-5 border border-white/30 rounded-full mb-[10px]'>
                     <IconCheck size={68} stroke={1} className='' />

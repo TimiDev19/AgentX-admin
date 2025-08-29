@@ -6,7 +6,7 @@ import { IconMail } from "@tabler/icons-react";
 
 export default function ChatFlowUI() {
     return (
-        <div className="min-h-screen bg-transparent text-black dark:text-white p-0">
+        <div className="min-h-[100dvh] bg-transparent text-black dark:text-white p-0">
             {/* Title */}
             <h1 className="text-xl font-semibold mb-8">Create/Reorder Chat Flow</h1>
 
